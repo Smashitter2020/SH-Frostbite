@@ -1,0 +1,12 @@
+:root{
+  --bg:#071018;
+  --panel:#0d1116;
+  --muted:#9aa6b2;
+  --accent:#7be0ff;
+  --ice:#cfeeff;
+  --glass: rgba(255,255,255,0.04);
+  --radius:10px;
+  --fs-hero: clamp(28px, 6vw, 56px);
+  --container: 1100px;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
