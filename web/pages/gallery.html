@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smash Hit Frostbite</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#"><img src="../assets/logo.jpg" alt="Logo" /></a>
+      <nav class="nav" style="user-select: none;">
+        <a href="index.html">Home</a>
+        <a href="#">Gallery</a>
+        <a href="changelog.html">Changelog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container" style="user-select: none;">
+        <h1>Gallery</h1>
+      </div>
+    </section>
+    <section class="container gallery" style="user-select: none;">
+      <div>
+        <img src="../assets/logo.jpg">
+        <div class="caption">The Smash Hit Frostbite logo.</div>
+      </div>
+      <div>
+        <img src="../assets/achievements.jpg">
+        <div class="caption">The new achievement system.</div>
+      </div>
+      <div>
+        <img src="../assets/endlesslevel.jpg">
+        <div class="caption">The new endless level after 8 checkpoints.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="user-select: none;">
+      <small>© <span id="currentYear"></span> Smash Hit Lab — Fan mod. Not affiliated with Mediocre AB.</small>
+    </div>
+  </footer>
+</body>
+<script>
+// Get current year to avoid commits
+window.onload = function() {
+  document.getElementById("currentYear").textContent = new Date().getFullYear().toString();
+}
+</script>
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+.gallery img {
+  margin-bottom:10px;border-radius: 4px;
+}
+.gallery .caption {
+  font-size: 15px;
+  color: #d7d7d7;
+}
+</style>
+</html>

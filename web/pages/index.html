@@ -4,18 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Smash Hit Frostbite</title>
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="#"><img src="assets/logo.jpg" alt="Logo" /></a>
+      <a class="logo" href="#"><img src="../assets/logo.jpg" alt="Logo" /></a>
       <nav class="nav" style="user-select: none;">
         <a href="#">Home</a>
-        <a href="/downloads.html">Download</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="#changelog">Changelog</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="changelog.html">Changelog</a>
       </nav>
     </div>
   </header>
@@ -43,19 +42,24 @@
       </article>
     </section>
 
-    <section id="changelog" class="container changelog" style="user-select: none;">
-      <h2>Changelog</h2>
-      <ul>
-        <li><strong>v1.0.3</strong> — Gameplay and UI tweaks; bug fixes</li>
-        <li><strong>v1.0.2</strong> — Fixed crashes; performance patches</li>
-      </ul>
+    <section class="container" style="user-select: none;">
+      <article>
+        <h2>Introducing the New Achievement System</h2>
+        <p>This mod features the new Achievement System, without the default achievement system from Google Play Games. It features 11 new achivements, and complete checkpoints or game modes to unlock achievements!</p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container" style="user-select: none;">
-      <small>© 2025 Smash Hit Lab — Fan mod. Not affiliated with Mediocre AB.</small>
+      <small>© <span id="currentYear"></span> Smash Hit Lab — Fan mod. Not affiliated with Mediocre AB.</small>
     </div>
   </footer>
 </body>
+<script>
+// Get current year to avoid commits
+window.onload = function() {
+  document.getElementById("currentYear").textContent = new Date().getFullYear().toString();
+}
+</script>
 </html>

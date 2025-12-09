@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smash Hit Frostbite</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#"><img src="../assets/logo.jpg" alt="Logo" /></a>
+      <nav class="nav" style="user-select: none;">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Changelog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container" style="user-select: none;">
+        <h1>Changelog</h1>
+        <p class="tagline">Updates appear in each version of Smash Hit Frostbite.</p>
+      </div>
+    </section>
+    <section id="changelog" class="container changelog" style="user-select: none;">
+      <ul>
+        <li><strong>1.0.3</strong><br>Gameplay and UI tweaks, major bug fixes</li>
+        <li><strong>1.0.21</strong><br>Fixed crash</li>
+        <li><strong>1.0.2</strong><br>Minor bug fixes and tweaks, gameplay optimization</li>
+        <li><strong>1.0.1</strong><br>Minor bug fixes</li>
+        <li><strong>1.0.01 and 1.0.02</strong><br>Fixed crashes</li>
+        <li><strong>1.0.0</strong><br>Initial release, new achievement system</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="user-select: none;">
+      <small>© <span id="currentYear"></span> Smash Hit Lab — Fan mod. Not affiliated with Mediocre AB.</small>
+    </div>
+  </footer>
+</body>
+<script>
+// Get current year to avoid commits
+window.onload = function() {
+  document.getElementById("currentYear").textContent = new Date().getFullYear().toString();
+}
+</script>
+</html>
